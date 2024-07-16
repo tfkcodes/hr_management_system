@@ -25,11 +25,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="welcome-box">
-                        <div class="welcome-img">
+                        {{-- <div class="welcome-img">
                             <img src="{{ URL::to('/assets/images/'. Auth::user()->avatar) }}" alt="{{ Auth::user()->name }}">
-                        </div>
+                        </div> --}}
                         <div class="welcome-det">
-                            <h3>{{ $greet }} Welcome, {{ Session::get('name') }}!</h3>
+                            <h3>{{ $greet }} {{ Session::get('name') }}!</h3>
                             <p>{{ $todayDate }}</p>
                         </div>
                     </div>
